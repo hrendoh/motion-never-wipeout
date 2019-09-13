@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+#game canvas {
+  width: 100%;
+  height: 100%;
+}
+#webacamCanvas {
+  background: #eee;
+  display: block;
+  margin: 0 auto;
+      transform: rotateY(180deg);
+}
+#loading-indicator {
+  text-align: center;
+}

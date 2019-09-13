@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Motion Never Wipeout</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="game"></div>
+  <div id="controles">
+    <canvas id="webacamCanvas" width="320" height="240"></canvas>
+    <video id="video" width="320" height="240" style="display:none;" autoplay playsinline>Video stream not
+      available.</video>
+    <div id="loading-indicator">PoseNet model is loading.</div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.js"></script>
+　<script src="lib/CannonDebugRenderer.js"></script>
+  <script src="lib/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
