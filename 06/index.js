@@ -116,6 +116,7 @@ class Game {
     seesawBody.addShape(seesawWallB, new CANNON.Vec3(0, 2.5, -5));
     var fulcrumCylinder = new CANNON.Cylinder(1.5, 1.5, 10, 100);
     seesawBody.addShape(fulcrumCylinder);
+    this.world.addBody(seesawBody);
     this.seesawBody = seesawBody;
 
     // プレイヤーを作成
